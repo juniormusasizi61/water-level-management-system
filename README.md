@@ -1,16 +1,10 @@
 # project-website-template
-Demo: https://yenchiah.github.io/project-website-template/
+Demo: (https://juniormusasizi61.github.io/water-level-management-system/)
 
-The current version is v3.43. The last known stable version is [v3.36](https://github.com/yenchiah/project-website-template/tree/277205cb699b02f3f7ba5f9f6ea20d987582c5bf).
+The current version is v1.0 of the water level management system project
 
-This is a responsive (mobile/desktop) and light-weight HTML/CSS template for building projects or personal websites. If your website does not require complex user interactions, I recommend starting with the empty template (empty.html) and copy codes from the file that contains different layouts (index.html). For building interactive websites, this library also provides several widgets (widgets.html) based on [jQuery](https://jquery.com/) and [jQuery UI](https://jqueryui.com/). Examples that use this template are:
-- Personal website: [http://yenchiah.me](http://yenchiah.me) (Link to [code repository](https://github.com/yenchiah/yenchiah.github.io))
-- Project website: [http://smellpgh.org](http://smellpgh.org) (Link to [code repository](https://github.com/CMU-CREATE-Lab/smell-pittsburgh-website))
-- Project website: [https://smellmycity.org](https://smellmycity.org) (Link to [code repository](https://github.com/CMU-CREATE-Lab/smell-my-city-website))
-- Project website: [https://smoke.createlab.org](https://smoke.createlab.org) (Link to [code repository](https://github.com/CMU-CREATE-Lab/video-labeling-tool))
-- Project website: [https://periscope.io.tudelft.nl](https://periscope.io.tudelft.nl) (Link to [code repository](https://github.com/TUD-KInD/COCTEAU-TUD))
-- Lab website: [https://multix-amsterdam.github.io/](https://multix-amsterdam.github.io/) (Link to [code repository](https://github.com/MultiX-Amsterdam/multix-amsterdam.github.io))
-- Conference website: [https://www.mmm2024.org/](https://www.mmm2024.org/) (Link to [code repository](https://github.com/MultiX-Amsterdam/MMM24-website))
+This is a responsive (mobile/desktop) and light-weight HTML/CSS project website. (https://jqueryui.com/). Examples that use this template are:
+- Project website:  [code repository](https://juniormusasizi61.github.io/water-level-management-system/)
 
 If you would love to keep updating this template, please keep your codes in separate files (custom.css and custom.js) and avoid modifying the following:
 - css/frame.css (CSS for the main frame of the website)
@@ -21,7 +15,7 @@ If you would love to keep updating this template, please keep your codes in sepa
 - js/menu.js (JavaScript for loading the menu bar)
 - js/footer.js (JavaScript for loading the footer)
 
-From version 3.0, the menu bar at the top is moved into `menu.html` for better management. Also, from version 3.37, the footer at the bottom is moved into `footer.html`. Each template page will now use jQuery to load the menu bar and the footer, as shown below:
+From version 1.0, the menu bar at the top is moved into `menu.html` for better management.
 ```html
 <script src="js/menu.js"></script>
 <script src="js/footer.js"></script>
@@ -49,7 +43,7 @@ This template is tested and worked on:
   - Firefox 102
 
 # Problems and Bugs
-Here are the problems and bugs that I plan to address in the future. If you fixed them, please do not hesitate to send me a pull request, and I would be very grateful. Please also report problems and bugs in [GitHub Issues](https://github.com/yenchiah/project-website-template/issues).
+Here are the problems and bugs that I plan to address in the future. If you fixed them, please do not hesitate to send me a pull request, and I would be very grateful. Please also report problems and bugs in [GitHub Issues](https://juniormusasizi61.github.io/water-level-management-system/issues).
 
 - On mobile Safari, the menu on the top will not close after opening it. This is because the menu icon on mobile Safari retains focus after a touch event, and the menu relies on the loss of focus event of the icon to close.
 - On Safari, the survey question that asks users to select photos will display the photos in a weird way after clicking on the checkbox. The reason for this problem is unknown.
