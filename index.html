@@ -1,255 +1,388 @@
-(
 <!doctype html>
 <html>
 
 <head>
-  <title>water level management system</title>
+  <title>Water Level Management System</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/frame.css" rel="stylesheet" type="text/css">
+  <link href="css/controls.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
   <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .menu-container {
+      background-color: #333;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+    }
+
+    .content-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+
+    .banner-table {
+      background-color: #005cbf;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .content {
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .text {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .image {
+      max-width: 100%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .add-top-margin-small {
+      margin-top: 20px;
+    }
+
     .menu-index {
       color: rgb(255, 255, 255) !important;
       opacity: 1 !important;
       font-weight: 700 !important;
     }
+
+    .add-top-margin {
+      margin-top: 20px;
+    }
+
+    .image-caption {
+      text-align: center;
+      color: #777;
+      font-style: italic;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .banner h2 {
+      margin: 0;
+    }
+
+    .add-bottom-margin-large {
+      margin-bottom: 50px;
+    }
+
+    .control-group {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .custom-image-button img {
+      border-radius: 8px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .custom-image-button img:hover {
+      transform: scale(1.05);
+    }
+
+    .content-table {
+      margin: 20px 0;
+    }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
 </head>
 
 <body>
-  <div class="menu-container"></div>
+  <div class="menu-container">
+    <h1>Water Level Management System</h1>
+  </div>
   <div class="content-container">
-  <div style="width: 100%; text-align: center;">
-        <img src="HC-SR04.jpg" alt="Banner Image" style="width: 100%; height: auto;">
+    <div style="width: 100%; text-align: center;">
+      <img src="HC-SR04.jpg" alt="Banner Image" style="width: 100%; height: auto;">
     </div>
     <div class="banner">
       <div class="banner-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin-small">WELCOME TO THE WATER WATER LEVEL MONITORING AND MANAGEMENT SYSTEM </h2>
-            <p class="text">
-             
-              The Water Level Management System is designed to monitor and control the water levels in a reservoir or tank. It provides real-time data on water levels and automates actions based on predefined thresholds to ensure efficient water management.
-
-We have used various sensors such as the HC-SR04 Ultrasonic sensor and the HW-038 water level sensor with their programming code files and ESP32, Arduino Uno R3 as the MCUs , the sim8000L as the sms sending device, the i2c lcd for displaying the water levels and the LEDs that light up in response to the detected water levels..
-            </p>
-          </div>
-        </div>
+        <h2 class="add-top-margin-small">WELCOME TO THE WATER LEVEL MONITORING AND MANAGEMENT SYSTEM</h2>
+        <p class="text">
+          The Water Level Management System is designed to monitor and control the water levels in a reservoir or tank. It provides real-time data on water levels and automates actions based on predefined thresholds to ensure efficient water management.
+          <br><br>
+          We have used various sensors such as the HC-SR04 Ultrasonic sensor and the HW-038 water level sensor with their programming code files and ESP32, Arduino Uno R3 as the MCUs, the SIM800L as the SMS sending device, the I2C LCD for displaying the water levels and the LEDs that light up in response to the detected water levels.
+        </p>
       </div>
     </div>
     <div class="content">
       <div class="content-table flex-column">
         <h2 class="add-top-margin-small">THE INSTRUMENTS USED IN THE SYSTEM</h2>
-        <img class="image" src="img/buck.jpeg">
-        <img class="image" src="img/led.jpeg">
-        <img class="image" src="img/sim800l.jpeg">
-        <img class="image" src="img/lcd.jpeg">
-        <img class="image" src="img/hw-08 sensor.jpeg">
-        <img class="image" src="img/ultrasonic sensor.jpeg">
-        <img class="image" src="img/esp 01 wifi.jpeg">
-        <img class="image" src="img/jumper wires.jpeg">
-        
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Intro-->
         <div class="flex-row">
-          <div class="flex-item flex-column">
-            <img class="image" src="img/jumper wires.jpeg">
-          </div>
-          
+          <img class="image" src="img/buck.jpeg" alt="Buck Converter">
+          <img class="image" src="img/led.jpeg" alt="LED">
+          <img class="image" src="img/sim800l.jpeg" alt="SIM800L">
+          <img class="image" src="img/lcd.jpeg" alt="LCD">
+          <img class="image" src="img/hw-08 sensor.jpeg" alt="HW-08 Sensor">
+          <img class="image" src="img/ultrasonic sensor.jpeg" alt="Ultrasonic Sensor">
+          <img class="image" src="img/esp 01 wifi.jpeg" alt="ESP-01 WiFi Module">
+          <img class="image" src="img/jumper wires.jpeg" alt="Jumper Wires">
         </div>
         <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text add-top-margin">
-              A Water Level Monitoring System is a comprehensive solution designed to monitor, manage, and control water levels in tanks, reservoirs, and other storage units. It ensures optimal water usage, prevents overflow or underflow, and enhances the reliability of water supply systems. Below are the detailed components and functionalities of such a system:
-              
-        <!--Start Text Only-->
+          <img class="image" src="img/jumper wires.jpeg" alt="Jumper Wires">
+        </div>
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2>WORKING PRINCIPLE DESCRIPTION</h2>
             <hr>
             <p class="text">
-             Working Principle
-Monitoring: Sensors continuously measure the water level and send data to the control unit.
-Processing: The control unit processes the data and determines if any action is required (e.g., turning on a pump).
-Control: Based on the processed data, the control unit activates actuators to adjust the water level.
-Alerting: If water levels reach critical thresholds, alarms are triggered, and notifications are sent via communication modules.
-Display: Real-time data is displayed on the interface for users to monitor and make informed decisions.
+              **Monitoring**: Sensors continuously measure the water level and send data to the control unit.
+              <br><br>
+              **Processing**: The control unit processes the data and determines if any action is required (e.g., turning on a pump).
+              <br><br>
+              **Control**: Based on the processed data, the control unit activates actuators to adjust the water level.
+              <br><br>
+              **Alerting**: If water levels reach critical thresholds, alarms are triggered, and notifications are sent via communication modules.
+              <br><br>
+              **Display**: Real-time data is displayed on the interface for users to monitor and make informed decisions.
             </p>
             <p class="text">
-              WHERE CAN THE SYSTEM BE APPLIED?
-Domestic Water Tanks: Ensures a consistent water supply for household use.
-Industrial Reservoirs: Manages water levels in large storage units for industrial processes.
-Agricultural Irrigation: Optimizes water usage for crop irrigation.
-Municipal Water Systems: Manages water distribution and storage in urban areas.
+              **Where can the system be applied?**
+              <br><br>
+              - Domestic Water Tanks: Ensures a consistent water supply for household use.
+              <br>
+              - Industrial Reservoirs: Manages water levels in large storage units for industrial processes.
+              <br>
+              - Agricultural Irrigation: Optimizes water usage for crop irrigation.
+              <br>
+              - Municipal Water Systems: Manages water distribution and storage in urban areas.
             </p>
-            
-            <div class="flex-row">
-              <div class="flex-item flex-column">
-                <h2>working principle </h2>
-                <hr>
-                <p class="text">
-                
-Monitoring: Sensors continuously measure the water level and send data to the control unit.
-Processing: The control unit processes the data and determines if any action is required (e.g., turning on a pump).
-Control: Based on the processed data, the control unit activates actuators to adjust the water level.
-Alerting: If water levels reach critical thresholds, alarms are triggered, and notifications are sent via communication modules.
-Display: Real-time data is displayed on the interface for users to monitor and make informed decisions.
-                </p>
-              </div>
-            </div>
-           
-              <div class="flex-item flex-column">
-                <p class="image-caption">  sensor category</p>
-                <img class="image max-width-800" src="img/ultrasonic sensor.png"> 
-              </div>
-              
-            <div class="flex-item flex-column">
-                <p class="image-caption">sim800l GSM module</p>
-                <img class="image max-width-800" src="img/sim800l.jpeg"> 
-              </div>
-              
-              
-            </div>
-            <h3>what are the benefits of using this system?</h3>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2>Benefits of Using This System</h2>
+            <hr>
             <p class="text">
-              1. Efficient Water Usage<br>
-Reduced Wastage: By accurately monitoring water levels, the system prevents overflow, thereby conserving water.
-Optimal Usage: Ensures water is used efficiently, especially in areas with limited water resources, contributing to sustainable water management practices.<br>
-2. Cost Savings<br>
-Lower Utility Bills: By minimizing water wastage and optimizing pump operation, the system reduces electricity and water bills.
-Maintenance Savings: Predictive maintenance based on real-time data can prevent costly repairs and extend the lifespan of equipment.<br>
-3. Enhanced Reliability<br>
-Consistent Supply: Ensures a steady water supply by automatically managing inflows and outflows, avoiding interruptions due to human error.
-Redundancy: Backup systems and alerts ensure that issues are addressed promptly, maintaining system uptime.<br>
-4. Remote Monitoring and Control<br>
-Convenience: Users can monitor and control water levels remotely via web interfaces or mobile apps, reducing the need for physical presence.
-Timely Alerts: Real-time notifications and alarms for critical levels enable quick responses to potential issues, preventing damage or service interruptions.<br>
-5. Environmental Impact<br>
-Sustainability: By optimizing water usage and reducing wastage, the system contributes to environmental conservation.
-Resource Management: Promotes sustainable management of water resources, essential for agricultural, industrial, and municipal applications.<br>
-6. Data Logging and Analytics<br>
-Historical Data: Collection and storage of data allow for trend analysis and better decision-making.
-Predictive Maintenance: Analysis of historical data helps predict equipment failures, enabling proactive maintenance and reducing downtime.<br>
-7. Scalability and Flexibility<br>
-Adaptability: Can be scaled and customized to fit various sizes and types of water storage units, from small household tanks to large industrial reservoirs.
-Integration: Easily integrates with other smart systems and IoT platforms, enhancing overall infrastructure management.<br>
-8. Safety<br>
-Preventive Measures: Automatically takes preventive actions like shutting off pumps or closing valves to avoid overflows or dry runs, protecting equipment and property.
-Health: Ensures water quality by maintaining appropriate levels and preventing stagnation.<br>
-9. User-Friendly Interface<br>
-Ease of Use: Simple interfaces with clear visualizations make it easy for users to monitor and manage the system.
-Accessibility: Accessible from various devices, including smartphones, tablets, and computers, providing flexibility for users.<br>
-10. Regulatory Compliance<br>
-Standards Adherence: Helps institutions comply with local and international water management regulations by providing accurate data and control over water resources.
-Reporting: Facilitates easy generation of reports required for regulatory compliance and audits.
-Specific Advantages for Institutions like Makerere University
-Campus-wide Water Management: Ensures consistent water supply across various buildings and facilities, enhancing the overall infrastructure reliability.
-Educational Tool: Provides a practical example of sustainable practices and advanced technology for students studying environmental science, engineering, and related fields.
-Cost Efficiency: Helps the university manage operational costs by reducing water and energy expenses.
-Research and Development: Acts as a live system for research and development in water management technologies, offering students and faculty a hands-on learning experience.
-
+              **1. Efficient Water Usage**
+              <br>
+              - Reduced Wastage: By accurately monitoring water levels, the system prevents overflow, thereby conserving water.
+              <br>
+              - Optimal Usage: Ensures water is used efficiently, especially in areas with limited water resources, contributing to sustainable water management practices.
+              <br><br>
+              **2. Cost Savings**
+              <br>
+              - Lower Utility Bills: By minimizing water wastage and optimizing pump operation, the system reduces electricity and water bills.
+              <br>
+              - Maintenance Savings: Predictive maintenance based on real-time data can prevent costly repairs and extend the lifespan of equipment.
+              <br><br>
+              **3. Enhanced Reliability**
+              <br>
+              - Consistent Supply: Ensures a steady water supply by automatically managing inflows and outflows, avoiding interruptions due to human error.
+              <br>
+              - Redundancy: Backup systems and alerts ensure that issues are addressed promptly, maintaining system uptime.
+              <br><br>
+              **4. Remote Monitoring and Control**
+              <br>
+              - Convenience: Users can monitor and control water levels remotely via web interfaces or mobile apps, reducing the need for physical presence.
+              <br>
+              - Timely Alerts: Real-time notifications and alarms for critical levels enable quick responses to potential issues, preventing damage or service interruptions.
+              <br><br>
+              **5. Environmental Impact**
+              <br>
+              - Sustainability: By optimizing water usage and reducing wastage, the system contributes to environmental conservation.
+              <br>
+              - Resource Management: Promotes sustainable management of water resources, essential for agricultural, industrial, and municipal applications.
+              <br><br>
+              **6. Data Logging and Analytics**
+              <br>
+              - Historical Data: Collection and storage of data allow for trend analysis and better decision-making.
+              <br>
+              - Predictive Maintenance: Analysis of historical data helps predict equipment failures, enabling proactive maintenance and reducing downtime.
+              <br><br>
+              **7. Scalability and Flexibility**
+              <br>
+              - Adaptability: Can be scaled and customized to fit various sizes and types of water storage units, from small household tanks to large industrial reservoirs.
+              <br>
+              - Integration: Easily integrates with other smart systems and IoT platforms, enhancing overall infrastructure management.
+              <br><br>
+              **8. Safety**
+              <br>
+              - Preventive Measures: Automatically takes preventive actions like shutting off pumps or closing valves to avoid overflows or dry runs, protecting equipment and property.
+              <br>
+              - Health: Ensures water quality by maintaining appropriate levels and preventing stagnation.
+              <br><br>
+              **9. User-Friendly Interface**
+              <br>
+              - Ease of Use: Simple interfaces with clear visualizations make it easy for users to monitor and manage the system.
+              <br>
+              - Accessibility: Accessible from various devices, including smartphones, tablets, and computers, providing flexibility for users.
+              <br><br>
+              **10. Regulatory Compliance**
+              <br>
+              - Standards Adherence: Helps institutions comply with local and international water management regulations by providing accurate data and control over water resources.
+              <br>
+              - Reporting: Facilitates easy generation of reports required for regulatory compliance and audits.
+              <br><br>
+              **Specific Advantages for Institutions like Makerere University**
+              <br><br>
+              - Campus-wide Water Management: Ensures consistent water supply across various buildings and facilities, enhancing the overall infrastructure reliability.
+              <br>
+              - Educational Tool: Provides a practical example of sustainable practices and advanced technology for students studying environmental science, engineering, and related fields.
+              <br>
+              - Cost Efficiency: Helps the university manage operational costs by reducing water and energy expenses.
+              <br>
+              - Research and Development: Acts as a live system for research and development in water management technologies, offering students and faculty a hands-on learning experience.
             </p>
-              
-                <img class="image max-width-800" src="img/setup.png">
-                <p class="image-caption">setup of the system </p>
-            
-            
-             
-            </ul>
-            <h3>Features and Tasks of of the water level management system
-            </h3>
-            <ul>
-              A robust water level monitoring system includes a variety of features designed to ensure efficient, reliable, and user-friendly operation. Here are the key features:<br>
-
-1. __Real-Time Monitoring__<br>
-Continuous Measurement: Sensors continuously measure water levels and provide real-time data.
-Instant Alerts: Immediate notifications for critical conditions, such as low or high water levels.<br>
-2. **Advanced Sensor Technology**<br>
-Ultrasonic Sensors: Non-contact measurement for precise water level readings.
-Float Sensors: Simple and reliable for direct level measurement.
-Capacitive Sensors: Suitable for various types of liquids, including water.
-Pressure Transducers: Measure the pressure exerted by the water column for accurate depth readings.<br>
-3. **Automated Control**<br>
-Pump Activation/Deactivation: Automatically turns pumps on or off based on water level thresholds.
-Valve Control: Regulates water inflow and outflow to maintain desired levels.
-Smart Algorithms: Utilizes algorithms to optimize pump and valve operations for efficiency and longevity.<br>
-4. **User Interface**<br>
-Digital Displays: LCD or LED screens showing real-time water levels and system status.
-Graphical Interface: Visual dashboards with graphs, charts, and historical data for easy interpretation.
-Touchscreen Controls: Intuitive and user-friendly for easy configuration and monitoring.<br>
-5. **Communication and Connectivity**<br>
-Wi-Fi/Ethernet: Enables remote access and monitoring through web interfaces or mobile apps.
-GSM Modules: Send SMS alerts for critical water levels or system failures.
-IoT Integration: Connects to IoT platforms for advanced data analytics and integration with other smart systems.<br>
-6. **Data Logging and Analytics**<br>
-Historical Data Storage: Logs water levels and system performance data for trend analysis and reporting.
-Predictive Analytics: Uses historical data to predict future water level trends and potential system issues.
-Report Generation: Automatic generation of reports for regulatory compliance and management review.<br>
-7. **Power Management**<br>
-Primary Power Supply: Operates on mains electricity.
-Backup Power: Battery or UPS to ensure continuous operation during power outages.<br>
-8. **Customizable Alerts and Notifications**<br>
-Configurable Thresholds: Set custom thresholds for low and high water levels.
-Multiple Alert Channels: Alerts via SMS, email, or in-app notifications.<br>
-9. **Security Features**<br>
-User Authentication: Ensures that only authorized personnel can access and control the system.
-Data Encryption: Protects data transmitted over networks from unauthorized access.<br>
-10. **Maintenance and Diagnostics**<br>
-Self-Diagnostics: System performs regular self-checks and alerts users to any faults or maintenance needs.
-Remote Troubleshooting: Allows for remote diagnostics and troubleshooting to quickly address issues.
-Specific Features for Institutional Applications (e.g., Makerere University)
-Scalability: Can be scaled to monitor multiple tanks or reservoirs across a large campus.
-Integration with Campus Systems: Connects with other campus infrastructure systems for comprehensive management.
-Educational Tools: Features that support educational purposes, such as data access for research and teaching.
-            </ul>
-                <div class="flex-item flex-column">
-                <img class="image center" src="img/led.jpeg" style="max-width: 300px;">
-              </div>
-              
-              
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Buttons-->
-        
+          </div>
+        </div>
+        <div class="flex-item flex-column">
+          <img class="image max-width-800" src="img/setup.png" alt="System Setup">
+          <p class="image-caption">Setup of the system</p>
+        </div>
+        <h3>Features and Tasks of the Water Level Management System</h3>
+        <ul class="text">
+          A robust water level monitoring system includes a variety of features designed to ensure efficient, reliable, and user-friendly operation. Here are the key features:
+          <br><br>
+          **1. Real-Time Monitoring**
+          <br>
+          - Continuous Measurement: Sensors continuously measure water levels and provide real-time data.
+          <br>
+          - Instant Alerts: Immediate notifications for critical conditions, such as low or high water levels.
+          <br><br>
+          **2. Advanced Sensor Technology**
+          <br>
+          - Ultrasonic Sensors: Non-contact measurement for precise water level readings.
+          <br>
+          - Float Sensors: Simple and reliable for direct level measurement.
+          <br>
+          - Capacitive Sensors: Suitable for various types of liquids, including water.
+          <br>
+          - Pressure Transducers: Measure the pressure exerted by the water column for accurate depth readings.
+          <br><br>
+          **3. Automated Control**
+          <br>
+          - Pump Activation/Deactivation: Automatically turns pumps on or off based on water level thresholds.
+          <br>
+          - Valve Control: Regulates water inflow and outflow to maintain desired levels.
+          <br>
+          - Smart Algorithms: Utilizes algorithms to optimize pump and valve operations for efficiency and longevity.
+          <br><br>
+          **4. User Interface**
+          <br>
+          - Digital Displays: LCD or LED screens showing real-time water levels and system status.
+          <br>
+          - Graphical Interface: Visual dashboards with graphs, charts, and historical data for easy interpretation.
+          <br>
+          - Touchscreen Controls: Intuitive and user-friendly for easy configuration and monitoring.
+          <br><br>
+          **5. Communication and Connectivity**
+          <br>
+          - Wi-Fi/Ethernet: Enables remote access and monitoring through web interfaces or mobile apps.
+          <br>
+          - GSM Modules: Send SMS alerts for critical water levels or system failures.
+          <br>
+          - IoT Integration: Connects to IoT platforms for advanced data analytics and integration with other smart systems.
+          <br><br>
+          **6. Data Logging and Analytics**
+          <br>
+          - Historical Data Storage: Logs water levels and system performance data for trend analysis and reporting.
+          <br>
+          - Predictive Analytics: Uses historical data to predict future water level trends and potential system issues.
+          <br>
+          - Report Generation: Automatic generation of reports for regulatory compliance and management review.
+          <br><br>
+          **7. Power Management**
+          <br>
+          - Primary Power Supply: Operates on mains electricity.
+          <br>
+          - Backup Power: Battery or UPS to ensure continuous operation during power outages.
+          <br><br>
+          **8. Customizable Alerts and Notifications**
+          <br>
+          - Configurable Thresholds: Set custom thresholds for low and high water levels.
+          <br>
+          - Multiple Alert Channels: Alerts via SMS, email, or in-app notifications.
+          <br><br>
+          **9. Security Features**
+          <br>
+          - User Authentication: Ensures that only authorized personnel can access and control the system.
+          <br>
+          - Data Encryption: Protects data transmitted over networks from unauthorized access.
+          <br><br>
+          **10. Maintenance and Diagnostics**
+          <br>
+          - Self-Diagnostics: System performs regular self-checks and alerts users to any faults or maintenance needs.
+          <br>
+          - Remote Troubleshooting: Allows for remote diagnostics and troubleshooting to quickly address issues.
+          <br><br>
+          **Specific Features for Institutional Applications (e.g., Makerere University)**
+          <br>
+          - Scalability: Can be scaled to monitor multiple tanks or reservoirs across a large campus.
+          <br>
+          - Integration with Campus Systems: Connects with other campus infrastructure systems for comprehensive management.
+          <br>
+          - Educational Tools: Features that support educational purposes, such as data access for research and teaching.
+        </ul>
+        <div class="flex-item flex-column">
+          <img class="image center" src="img/led.jpeg" alt="LED" style="max-width: 300px;">
+        </div>
         <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-        
           </div>
           <div class="flex-item flex-column">
             <div class="control-group">
               <a href="javascript:void(0)" target="_blank" class="custom-image-button">
-               
-              </a>
-              <a href="javascript:void(0)" target="_blank" class="custom-image-button">
-                <img src="img/sim800l.jpeg" width="150">
+                <img src="img/sim800l.jpeg" width="150" alt="SIM800L">
               </a>
             </div>
           </div>
         </div>
-        
-        <!--End Text with Buttons-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Images and Image buttons-->
-        
-        <!--End Credits-->
-        <!-------------------------------------------------------------------------------------------->
       </div>
     </div>
     <div class="banner">
       <div class="banner-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2>manage your water levels efficiently!</h2>
-            <p class="text add-bottom-margin-large">
-              for more support contact the computer science embedded systems group 6 to help you sort out the issues concerning managing water levels in your water reservation systems.
-            </p>
-          </div>
-        </div>
+        <h2>Manage Your Water Levels Efficiently!</h2>
+        <p class="text add-bottom-margin-large">
+          For more support, contact the Computer Science Embedded Systems Group 6 to help you sort out the issues concerning managing water levels in your water reservation systems.
+        </p>
       </div>
     </div>
   </div>
