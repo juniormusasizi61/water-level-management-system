@@ -1,34 +1,123 @@
-/*************************************************************************
- * Your custom CSS file
- *************************************************************************/
-
-.custom-dropdown {
-  width: 240px;
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-.custom-textbox {
-  width: 240px;
+.menu-container {
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+  text-align: center;
 }
 
-#dialog-1,
-#dialog-2,
-#dialog-3,
-#dialog-4,
-#share-dialog {
-  display: none;
+.content-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
-#share-url {
+.banner img {
   width: 100%;
-  -webkit-touch-callout: default !important;
-  -webkit-user-select: text !important;
-  -khtml-user-select: text !important;
-  -moz-user-select: text !important;
-  -ms-user-select: text !important;
-  user-select: text !important;
+  height: auto;
 }
 
-#share-url-copy-prompt {
-  display: none;
-  color: #007bff;
+.banner-table {
+  background-color: #005cbf;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.content {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.text {
+  color: #555;
+  line-height: 1.6;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.add-top-margin-small {
+  margin-top: 20px;
+}
+
+.menu-index {
+  color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+
+.add-top-margin {
+  margin-top: 20px;
+}
+
+.image-caption {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+}
+
+.control-group {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-image-button img {
+  border: 2px solid #005cbf;
+  border-radius: 8px;
+}
+
+.add-bottom-margin-large {
+  margin-bottom: 40px;
+}
+
+.max-width-800 {
+  max-width: 800px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+  }
 }
